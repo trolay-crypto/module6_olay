@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trisha Lei Olay - Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .scroll {
+            animation: appear 0.8s ease forwards;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-[Inter]">
+
+    <!-- Navigation -->
+    <header class="bg-gradient-to-r from-red-800 via-yellow-200 to-red-800 text-gray-900 py-4 md:py-6 shadow-sm">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="text-2xl font-semibold hover:text-yellow-200 transition duration-200">
+                Trisha.
+            </div>
+            <nav>
+                <ul class="flex font-semibold space-x-8">
+                    <li><a href="index.html" class="text-red-800 font-semibold border-b-2 border-red-800">Home</a></li>
+                    <li><a href="about.html" class="hover:text-yellow-200 transition">About</a></li>
+                    <li><a href="projects.html" class="hover:text-yellow-200 transition">Projects</a></li>
+                    <li><a href="contact.html" class="hover:text-yellow-200 transition">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="scroll container mx-auto py-16 px-6 flex flex-col md:flex-row items-center justify-between gap-10">
+
+        <!-- Left Side: Text + Socials -->
+        <div class="flex flex-col md:w-1/2 space-y-6">
+
+            <!-- Welcome Text -->
+            <h1 class="text-5xl md:text-6xl font-bold text-red-800 leading-tight">
+                Welcome to <span class="text-red-800">Trisha’s Portfolio!</span>
+            </h1>
+
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Hi! I'm a first-year <span class="font-semibold">Computer Science</span> student from
+                <span class="font-semibold">Camarines Sur Polytechnic College</span>, currently exploring the
+                world of programming and technology. This portfolio showcases my growth, creativity, and journey
+                as I learn, experiment, and build.
+            </p>
+
+            <!-- Call-to-Action Buttons -->
+            <div class="flex space-x-4 pt-2">
+                <a href="projects.html"
+                    class="bg-red-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-yellow-200 hover:text-gray-900 transition duration-300 shadow-md">
+                    🔍 Explore My Projects
+                </a>
+                <a href="contact.html"
+                    class="bg-yellow-200 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-red-800 hover:text-white transition duration-300 shadow-md">
+                    📬 Get in Touch
+                </a>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex space-x-5 pt-4">
+                <a href="https://www.facebook.com/leyrizh" target="_blank" class="hover:scale-110 transition">
+                    <img src="images/facebook.jpg" alt="Facebook" class="h-6 w-6 rounded-md shadow-sm">
+                </a>
+                <a href="https://www.instagram.com/leytrisya?igsh=MXc2M2xjcHVsamd5NA==" target="_blank"
+                    class="hover:scale-110 transition">
+                    <img src="images/instagram.jpg" alt="Instagram" class="h-6 w-6 rounded-md shadow-sm">
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Right Side: Image -->
+        <div class="md:w-1/2 flex justify-center">
+            <img src="images/profile.jpg" alt="Profile"
+                class="rounded-2xl w-64 h-80 object-cover shadow-lg border-4 border-gray-300 hover:scale-105 transition duration-300">
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+    <!-- Other content of your page -->
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-yellow-100 py-6 mt-16">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+            <p class="text-sm">&copy; 2025 Trisha Lei Olay. All rights reserved.</p>
+            <div class="flex space-x-4 mt-3 md:mt-0">
+                <a href="https://www.facebook.com/leyrizh" target="_blank">
+                    <img src="images/facebook.jpg" alt="Facebook" class="h-6 w-6 rounded-md">
+                </a>
+                <a href="https://www.instagram.com/leytrisya" target="_blank">
+                    <img src="images/instagram.jpg" alt="Instagram" class="h-6 w-6 rounded-md">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
