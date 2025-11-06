@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Trisha Lei Olay</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .scroll {
+            animation: appear 0.8s ease forwards;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-[Inter]">
+
+    <!-- Navigation -->
+    <header class="bg-gradient-to-r from-red-800 via-yellow-200 to-red-800 text-gray-900 py-4 md:py-6 shadow-sm">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="text-2xl font-semibold hover:text-yellow-200 transition duration-200">
+                Trisha.
+            </div>
+            <nav>
+                <ul class="flex font-semibold space-x-8">
+                    <li><a href="index.html" class="hover:text-yellow-200 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-yellow-200 transition">About</a></li>
+                    <li><a href="projects.html"
+                            class="text-red-800 font-semibold border-b-2 border-red-800">Projects</a></li>
+                    <li><a href="contact.html" class="hover:text-yellow-200 transition">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <main class="scroll container mx-auto mt-16 mb-24 px-6">
+        <h1 class="text-4xl font-bold text-center text-red-800 mb-10">My Projects</h1>
+
+        <!-- Grid Layout -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <!-- Project 1: Portfolio Website -->
+            <div class="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="images/project1.jpg" alt="Project 1"
+                    class="w-full h-56 object-cover border-b border-gray-300">
+                <div class="p-6 space-y-3">
+                    <h2 class="text-2xl font-bold text-red-800">🌸 Personal Portfolio Website</h2>
+                    <p class="text-gray-700">
+                        A personal website designed to showcase my background, skills, and projects as a Computer
+                        Science student.
+                        Built using simple HTML and Tailwind CSS to learn about web structure, layout, and responsive
+                        design.
+                    </p>
+                    <p><span class="font-semibold text-gray-700">Technologies Used:</span> HTML, CSS (Tailwind)</p>
+                    <a href="index.html"
+                        class="inline-block mt-3 bg-red-800 text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-700 transition duration-300 shadow">
+                        View Project
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2: Dog Photo Gallery -->
+            <div class="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="images/project2.jpg" alt="Project 2"
+                    class="w-full h-56 object-cover border-b border-gray-300">
+                <div class="p-6 space-y-3">
+                    <h2 class="text-2xl font-bold text-red-800">🐶 Dog Photo Gallery</h2>
+                    <p class="text-gray-700">
+                        A fun and simple image gallery featuring adorable dog photos. This project helped me explore
+                        image grid
+                        layouts, responsive design, and hover effects using CSS.
+                    </p>
+                    <p><span class="font-semibold text-gray-700">Technologies Used:</span> HTML, CSS</p>
+                    <a href="dog-gallery.html"
+                        class="inline-block mt-3 bg-red-800 text-white px-4 py-2 rounded-lg font-semibold hover:bg-red-700 transition duration-300 shadow">
+                        View Project
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3: Future Game Project -->
+            <div class="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-xl transition duration-300">
+                <img src="images/project3.jpg" alt="Project 3"
+                    class="w-full h-56 object-cover border-b border-gray-300">
+                <div class="p-6 space-y-3">
+                    <h2 class="text-2xl font-bold text-red-800">🎮 Future Project: Mini Web Game</h2>
+                    <p class="text-gray-700">
+                        A planned project where I aim to develop a simple interactive web-based game. This project will
+                        help me
+                        strengthen my JavaScript and problem-solving skills while learning about event handling and game
+                        logic.
+                    </p>
+                    <p><span class="font-semibold text-gray-700">Technologies Used:</span> HTML, CSS, JavaScript
+                        (planned)</p>
+                    <a href="#"
+                        class="inline-block mt-3 bg-yellow-200 text-red-800 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300 shadow">
+                        Coming Soon
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- Other content of your page -->
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-yellow-100 py-6 mt-16">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+            <p class="text-sm">&copy; 2025 Trisha Lei Olay. All rights reserved.</p>
+            <div class="flex space-x-4 mt-3 md:mt-0">
+                <a href="https://www.facebook.com/leyrizh" target="_blank">
+                    <img src="images/facebook.jpg" alt="Facebook" class="h-6 w-6 rounded-md">
+                </a>
+                <a href="https://www.instagram.com/leytrisya" target="_blank">
+                    <img src="images/instagram.jpg" alt="Instagram" class="h-6 w-6 rounded-md">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
