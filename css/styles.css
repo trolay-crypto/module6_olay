@@ -1,0 +1,125 @@
+/* === Global Styles === */
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #dad2bc;
+  /* bone color */
+  color: #dad2bc;
+  /* default text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* === Header / Navigation === */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  background: #252323;
+  /* maroon -> gray -> light yellow */
+  box-shadow: 0 2px 4px rgba(186, 98, 98, 0.1);
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  color: #fef9e7;
+  /* default link color */
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #1b1a14;
+  /* hover color (carbon black) */
+  transform: scale(1.05);
+}
+
+header nav ul li a.active {
+  color: #5f5f37;
+  /* active/current page highlight */
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+/* === Footer === */
+footer {
+  background-color: #70798c;
+  /* gray footer background */
+  color: #3d4d84;
+  /* light blue text */
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+/* === Accent Elements === */
+.accent {
+  color: #2b2626;
+  /* maroon accent */
+  font-weight: 600;
+}
+
+.bg-accent {
+  background-color: #676767;
+  color: #fef9e7;
+  /* light yellow text on accent background */
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+
+/* === Scroll Animations === */
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll {
+  animation: appear 0.8s ease forwards;
+  opacity: 0;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  .project-card {
+    width: 100%;
+  }
+}
